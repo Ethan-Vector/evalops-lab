@@ -1,0 +1,20 @@
+evalops:
+  name: ethan-evalops-lab
+  environment: dev
+
+runner:
+  kind: local_stub
+  # kind: http_chat
+  http:
+    url: "http://localhost:8080/v1/chat/completions"
+    headers:
+      x-tenant-id: "acme"
+      x-route: "support_copilot"
+    timeout_s: 30
+
+grading:
+  pass_rate_threshold: 0.90
+
+reporting:
+  reports_dir: "reports"
+  traces_dir: "traces"

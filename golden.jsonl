@@ -1,0 +1,3 @@
+{"id":"pw_reset_1","expect":{"contains":["Forgot Password","reset email"],"citations_any":["passwords.md"]},"should_pass":true}
+{"id":"pw_reset_2","expect":{"contains":["expire","30"],"citations_any":["passwords.md"]},"should_pass":true}
+{"id":"random_1","expect":{"refusal":true},"should_pass":true}
