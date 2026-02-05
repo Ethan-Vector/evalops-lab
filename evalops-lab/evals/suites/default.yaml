@@ -1,0 +1,12 @@
+name: default-smoke
+datasets:
+  - evals/datasets/smoke.jsonl
+metrics:
+  - contains_any
+  - latency_ms
+  - output_len
+gates:
+  min_pass_rate: 1.0
+  max_p95_latency_ms: 200.0
+  max_failures: 0
+seed: 0

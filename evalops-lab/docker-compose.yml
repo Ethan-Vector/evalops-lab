@@ -1,0 +1,6 @@
+services:
+  evalops:
+    build: .
+    volumes:
+      - ./workspace:/app/workspace
+    command: ["evalops", "run", "--suite", "evals/suites/default.yaml", "--provider", "mock"]

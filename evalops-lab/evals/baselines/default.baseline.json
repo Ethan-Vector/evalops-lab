@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "suite": "default-smoke",
+  "provider": {
+    "id": "mock"
+  },
+  "summary": {
+    "suite": "default-smoke",
+    "provider": "mock",
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "median_latency_ms": 0.0,
+    "p95_latency_ms": 0.0,
+    "gates_pass": true,
+    "gate_details": {
+      "min_pass_rate": {
+        "required": 1.0,
+        "actual": 1.0,
+        "ok": true
+      },
+      "max_p95_latency_ms": {
+        "required": 200.0,
+        "actual": 0.0,
+        "ok": true
+      },
+      "max_failures": {
+        "required": 0,
+        "actual": 0,
+        "ok": true
+      }
+    }
+  },
+  "by_case": {
+    "smoke:hello": {
+      "passed": true,
+      "checks": {
+        "contains_any": {
+          "ok": true,
+          "expected": [
+            "Hello"
+          ],
+          "hits": [
+            "Hello"
+          ]
+        },
+        "latency_ms": {
+          "value": 0.0
+        },
+        "output_len": {
+          "value": 6
+        }
+      }
+    },
+    "smoke:math1": {
+      "passed": true,
+      "checks": {
+        "contains_any": {
+          "ok": true,
+          "expected": [
+            "4"
+          ],
+          "hits": [
+            "4"
+          ]
+        },
+        "latency_ms": {
+          "value": 0.0
+        },
+        "output_len": {
+          "value": 1
+        }
+      }
+    },
+    "smoke:math2": {
+      "passed": true,
+      "checks": {
+        "contains_any": {
+          "ok": true,
+          "expected": [
+            "133"
+          ],
+          "hits": [
+            "133"
+          ]
+        },
+        "latency_ms": {
+          "value": 0.0
+        },
+        "output_len": {
+          "value": 3
+        }
+      }
+    },
+    "smoke:capital": {
+      "passed": true,
+      "checks": {
+        "contains_any": {
+          "ok": true,
+          "expected": [
+            "Rome"
+          ],
+          "hits": [
+            "Rome"
+          ]
+        },
+        "latency_ms": {
+          "value": 0.0
+        },
+        "output_len": {
+          "value": 4
+        }
+      }
+    }
+  },
+  "meta": {
+    "generated_from_run_timestamp": "baseline-manual"
+  }
+}
